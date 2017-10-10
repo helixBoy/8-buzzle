@@ -51,21 +51,19 @@ public class SearchMethods {
 
 				//stack to track the path of the solution
 				Stack<Node> solutionPath = new Stack<Node>();
-				solutionPath.push(tempNode); // add the goal node
 				
-				tempNode = tempNode.parent;
-				
+				// adding the solution path from the current node(the solution node) all the way back to the root...
 				while(tempNode.parent!=null){
 					solutionPath.push(tempNode);
 					tempNode = tempNode.parent;
 				}
-				solutionPath.push(tempNode); // add the root , since no parent for the root
+				solutionPath.push(tempNode); // add the root , since no parent for the root...
 				return solutionPath;
 
 			}
 			
 		}// while
-		return null;
+		return null; // not reachable
 		
 	}
 
