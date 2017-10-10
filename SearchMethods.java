@@ -9,7 +9,7 @@ public class SearchMethods {
 	//search in the search space and return the solution path
 	public static Stack<Node> BFS(int[] board){
 		
-		
+		// if not solvable , return null.
 		if(getInvCount(board) %2 == 1)
 			return null;
 		
