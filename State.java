@@ -7,7 +7,7 @@ public class State {
    private int boardSize = 9 ;
    private final int[] GOAL = { 1, 2, 3, 4, 5, 6, 7, 8, 0 };
    private int [] curState ;
-   public int outOfPlace = 0; 
+  
    
    //constructor
    public State(int [] board){
